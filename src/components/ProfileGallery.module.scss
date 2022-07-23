@@ -1,0 +1,58 @@
+.gallery_wrapper {
+min-height: 100vh;
+padding: 20px 0;
+
+// Gallery Menu Styles //
+.gallery_menu {
+  margin-bottom: 20px;
+
+  span {
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    color: #191919;
+    margin-right: 10px;
+
+    &:hover {
+      cursor: pointer;
+      color: #B7A076;
+      text-shadow: 2px 2px #191919;
+    }
+  }
+
+  @media(min-width: 600px) {
+    span {
+      font-size: 25px;
+    }
+  }
+
+  span:last-of-type {
+    margin-right: 0;
+  }
+}
+
+
+// Gallery Profile Styles //
+.profile_gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .profile_gallery {
+    max-width: 870px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+
+// Util Classes //
+.active {
+  color: #B7A076 !important;
+  text-shadow: 2px 2px #191919;
+}
+
+}
